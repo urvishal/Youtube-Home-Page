@@ -1,53 +1,92 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
 }
 .nav {
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 
 .nav-left {
-  display: flex;              /* put icon and logo in a row */
-  flex-direction: row;
-  align-items: center;        /* center vertically in the row */
-  gap: 10px; 
-  margin-left: 10px;
+  display: flex; /* put icon and logo in a row */
+  align-items: center; /* center vertically in the row */
+  gap: 10px;
 }
 
 img {
-    width: 85px;
-    height: 50px;
+  width: 115px;
+  height: 56px;
 }
 .nav-search {
   display: flex;
   width: 550px;
   align-items: center;
-  margin-left: -120px;
-  border: .05px solid #ccc;
+  border: 0.05px solid hsl(0, 0%, 18.82%);
   border-radius: 25px;
-  padding: 5px;
+  padding: 2px;
   background-color: black;
 }
 
-.search-input{
+.search-input {
   border: none;
   outline: none;
-  padding: 1px;
+  padding: 8px;
   flex: 1;
   border-radius: 25px;
   background-color: black;
 }
-.btn-search, .btn-mic {
-   background-color: transparent;
-  border: none;
+.btn-search {
+  background-color: #222222;
+  border-radius: 100%;
+  border: 0.05px solid white;
   cursor: pointer;
   padding: 8px 12px;
   font-size: 14px;
   color: white;
   transition: all 0.2s ease;
-
+}
+.btn-mic {
+  background-color: #272727;
+  border: none;
+  border-radius: 28%;
+  cursor: pointer;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: white;
+  transition: all 0.2s ease;
+}
+.nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-plus {
+  margin-right: 5px;
+}
+.btn-plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 5px;
+  gap: 5px;
+}
+.bell-icon {
+  background-color: black;
+  border: none;
+  color: white;
+  gap: 5px;
+}
+.profile {
+  width: 28px;
+  height: 20px;
+  border-radius: 100%;
+  border-radius: 100%;
+  background-color: white;
 }
